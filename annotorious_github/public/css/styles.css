@@ -332,8 +332,16 @@ th {
 
 label {
   display: inline-block;
+  margin-bottom: 0px;
 }
 
+div {
+  margin-bottom: 5px;
+}
+
+p{
+  margin-bottom: 0px;
+}
 button {
   border-radius: 0;
 }
@@ -12227,11 +12235,20 @@ textarea.form-control-lg {
 }
 
 /*Remove the scrollbar from Chrome, Safari, Edge and IE*/
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
+    -webkit-appearance: none;
+} */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
 }
-
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 * {
   -ms-overflow-style: none !important;
 }

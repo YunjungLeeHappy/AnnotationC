@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Annotation - Context(y) and Novel(y)</title>
+        <title>Annotation - Context(y) and Novel(n)</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -38,7 +38,7 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-lg-5">
-                <a class="navbar-brand" href="#!">Novel(y) and Context(y)</a>
+                <a class="navbar-brand" href="#!">Novel(n) and Context(n)</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,19 +58,16 @@
                   
                 
                 <div id="myDivLeft" class = "col-md-4 left">
-                  <div class="card border-primary mb-3" >
+                  <!-- <div class="card border-primary mb-3" >
                      <div class="card-body text-primary">
                         <h5 class="card-title" style="color:black">Matched Novel</h5>
                         <p id="comicnovel" class="card-text" style="color:black">
-                          <!-- "“Aria! Aria!” <br>
-                          Crash! <br>
-                          A glass fell from Aria's hands to the ground, shattering into dozens of pieces." <br> -->
                         </p>
                       </div>
-                   </div>
+                   </div> -->
                 </div>
 
-                <div id="myDivMid" class = "col-md-4 mid" style="text-align:center;">
+                <div id="myDivMid" class = "col-md-4 mid" style="text-align : center;">
                 
                 </div>
                
@@ -86,7 +83,7 @@
                           <li>Please keep your description concise overall;</li>
                           <li>Please use a minimum of 8 words;</li>
                           <!-- <li></li> style="color:red"> -->
-                          <li>Please use the novel. You can paste or edit parts of the novel sentence;</li>
+                          <!-- <li>Please use the novel. You can paste or edit parts of the novel sentence;</li> -->
                         </p>
                       </div>
                     </div>
@@ -169,11 +166,13 @@
                 const animal = ['Sheep', 'Chimpanzee', 'Antelope', 'Bear', 'Fox', 'Cat', 'Puma', 'Ape', 'Cow', 'Koala',
                 'Deer', 'Parrot', 'Donkey', 'Gorilla', 'Alpaca', 'Hamster', 'Frog', 'Elephant', 'Alligator', 'Dingo'];
                 const adj_animal = [];
+    
                 for (var i in adj) {
                     for (var j in animal) {
                         adj_animal.push(adj[i] + " " + animal[j])
                     }
                 }
+    
                 // Create session name
                 var newSessionName = adj_animal[Math.floor(Math.random() * adj_animal.length)]
     
@@ -190,7 +189,9 @@
                 //이미지
                 function getImg()
                 {
-                  var cuts = ['01','03','04','05','08','09','10','11','12'];
+                  //var cuts = ['01','03','04','05','08','09','10','11','12'];
+                  var cuts = ['01'];
+          
                   for(var i=0; i<cuts.length; i++){
                     var imgSrc = '../assets/Tappytoon/Dungeon/Dungeon_img_test/Dungeon_01_'+cuts[i]+'.jpg';
                     var imgInput = '<img src="'+imgSrc+'" width="400px">'
@@ -204,19 +205,24 @@
                 getImg();
                 
 
+
+                // var imgSrc = '../assets/Tappytoon/Dungeon/Dungeon_img_test/Dungeon_01_01.jpg';
+                // console.log(imgSrc);
+                // $('#myImg').attr('src',imgSrc);
+
                 //소설
                 //함수 본문
-                function readJSON(file, callback) {
-                    var rawFile = new XMLHttpRequest();
-                    rawFile.overrideMimeType("application/json");
-                    rawFile.open("GET", file, true);
-                    rawFile.onreadystatechange = function() {
-                        if (rawFile.readyState === 4 && rawFile.status == "200") {
-                            callback(rawFile.responseText);
-                        }
-                    }
-                    rawFile.send(null);
-                }
+                // function readJSON(file, callback) {
+                //     var rawFile = new XMLHttpRequest();
+                //     rawFile.overrideMimeType("application/json");
+                //     rawFile.open("GET", file, true);
+                //     rawFile.onreadystatechange = function() {
+                //         if (rawFile.readyState === 4 && rawFile.status == "200") {
+                //             callback(rawFile.responseText);
+                //         }
+                //     }
+                //     rawFile.send(null);
+                // }
 
                 //함수 사용법
                 readJSON("../assets/Tappytoon/Dungeon/Dungeon_mapping.json", function(text){

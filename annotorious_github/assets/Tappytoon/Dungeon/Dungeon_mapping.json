@@ -1,0 +1,47 @@
+[
+  {
+    "cutId": "01_01",
+    "oneTooneMapping": "Jung Dawoon was at the bottom of a deep pit.",
+    "Mapping": "The ground suddenly disappeared.\nWhen Jung Dawoon came to, he knew it was already hopeless.\n\"\"Damn it.\"\"\n[Oopsie, be careful! Historic sites like these always have just as many traps as treasures! It's one of the rules of the dungeon, you know!]\nThe annoyingly cheery voice echoed from a distance.\nThat damned assistant only offered advice after someone died.\nJung Dawoon was at the bottom of a deep pit.\nThe ground was covered in sharp, metal spikes\nOne of the spikes had pierced his stomach. Jung Dawoon was dying.\n“Damn it.\"\"\nWith the last of his strength, he pulled the spike from his body.\nHe then crawled across the floor and leaned against the wall.\nWeakly, he looked up and saw a circle of light at the end of the deep darkness.\nIt was the opening of the trap he'd fallen into.\n\nTo think some treasure blinded me when I'd gotten so far...\nHis regret was palpable.\nHe had no one to blame; it had been his own mistake that had doomed him.\nSo this is how I die?\nHis vision began to fade.\nHe must have lost too much blood.\nHis body was getting progressively colder.\nThere was a ringing in his ears, and his head was blank.\nHis senses were growing dull, and everything felt far away.\nHe'd struggled so much to survive, but now he was at death's door.\nWas any of this real in the first place? It's like I've been living in a nightmare since I got here.\nIndeed."
+  },
+  {
+    "cutId": "01_03",
+    "oneTooneMapping": "When Jung Dawoon came to, he knew it was already hopeless. \n\"Damn it.",
+    "Mapping": ""
+  },
+  {
+    "cutId": "01_04",
+    "oneTooneMapping": "The ground was covered in sharp, metal spikes \nOne of the spikes had pierced his stomach. Jung Dawoon was dying.",
+    "Mapping": ""
+  },
+  {
+    "cutId": "01_05",
+    "oneTooneMapping": "[Oopsie, be careful! Historic sites like these always have just as many traps as treasures! It's one of the rules of the dungeon, you know!] \nThe annoyingly cheery voice echoed from a distance. \nThat damned assistant only offered advice after someone died.",
+    "Mapping": ""
+  },
+  {
+    "cutId": "01_08",
+    "oneTooneMapping": "“Damn it.\" \nWith the last of his strength, he pulled the spike from his body.",
+    "Mapping": ""
+  },
+  {
+    "cutId": "01_09",
+    "oneTooneMapping": "“Damn it.\" \nWith the last of his strength, he pulled the spike from his body.",
+    "Mapping": ""
+  },
+  {
+    "cutId": "01_10",
+    "oneTooneMapping": "He then crawled across the floor and leaned against the wall.",
+    "Mapping": ""
+  },
+  {
+    "cutId": "01_11",
+    "oneTooneMapping": "So this is how I die? \nHis vision began to fade. \nHe must have lost too much blood. \nHis body was getting progressively colder. \nThere was a ringing in his ears, and his head was blank. \nHis senses were growing dull, and everything felt far away.",
+    "Mapping": ""
+  },
+  {
+    "cutId": "01_12",
+    "oneTooneMapping": "He'd struggled so much to survive, but now he was at death's door. \nWas any of this real in the first place? It's like I've been living in a nightmare since I got here. \nIndeed.",
+    "Mapping": ""
+  }
+]

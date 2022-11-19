@@ -98,18 +98,18 @@
   <!-- Responsive navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container px-lg-5">
-      <a class="navbar-brand" href="#!">Novel(y) and Context(n)</a>
+      <a class="navbar-brand" href="#!">Novel(y) and Instruction(base)</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
           class="navbar-toggler-icon"></span></button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </nav>
   <!-- Header-->
@@ -129,48 +129,47 @@
           </div>
         </div>
 
-        <div id="myDivMid" class="col-md-4 mid" style="text-align:left;"> 
-
+        <div id="myDivMid" class="col-md-4 mid" style="text-align:center;"> 
           <!-- <img src="https://unsplash.it/500/500/?random" alt="" id="cropper"> -->
-
         </div>
 
 
         <div id="myDivRight" class="col-md-4 right" color="black">
-
           <div class="card border-primary mb-3">
             <div class="card-body text-primary">
               <h5 class="card-title" style="color:black">Instruction</h5>
               <p class="card-text" style="color:black">
-                <li style="color:black">Please describe a comic scene with a red border;</li>
+                <!-- <li style="color:black">Please describe a comic scene with a red border;</li> -->
                 <li style="color:black">Please describe the visual content and the related information that is helpful
                   for understanding the comic scene;
-                <li style="color:black">Please keep your description concise overall;</li>
+                <!-- <li style="color:black">Please keep your description concise overall;</li> -->
+                <li style="color:black">Please describe any actors (people, animals, etc.), their actions and expressions, the activities underway, and the environment in which those activities are taking place;</li>
+                <li style="color:black">• Please keep your description concise overall;</li>
                 <li style="color:black">Please use a minimum of 8 words;</li>
+                <!-- <li style="color:black">(Option)Please write down the situation/character/place/time/object or etc.</li> -->
                 <!-- <li style="color:black"><b>Please use the novel.</b> You can paste or edit parts of the novel sentence;</li> -->
               </p>
             </div>
           </div>
 
           <form>
-
             <div class="form-group">
               <div style="margin-bottom: 15px;">
-                <label for="des1" style="margin-bottom: 0px;"><b>The scene
-                    description</b></label>
+                <!-- <label for="des1" style="margin-bottom: 0px;"><b>The scene
+                    description</b></label> -->
                 <!-- <p>해당 장면의 전체적인 상황설명을 해주세요</p> -->
-                <p style="margin-bottom: 10px;">Please describe the overall situation of the scene.</p>
+                <!-- <p style="margin-bottom: 10px;">Please describe the overall situation of the scene.</p> -->
                 <!-- <p class="textCount" id="cnt1">0</p><p class="textTotal" float="left">/300</p> -->
                 <textarea class="form-control" id="des1" rows="3"></textarea>
               </div>
-
+<!-- 
               <div style="margin-bottom: 15px;">
-                <label for="des2" style="margin-bottom: 0px;"><b>Background</b></label>
+                <label for="des2" style="margin-bottom: 0px;"><b>Background</b></label> -->
                 <!-- <p>장소/시간/사물 등을 표현해주세요</p> -->
-                <p style="margin-bottom: 10px;">Please write down the place/time/object or etc.</p>
+<!--                 <p style="margin-bottom: 10px;">Please write down the place/time/object or etc.</p> -->
                 <!-- <p class="textCount" id="cnt2">0</p><p class="textTotal">/300</p> -->
-                <textarea class="form-control" id="des2" rows="3"></textarea>
-              </div>
+<!--                 <textarea class="form-control" id="des2" rows="3"></textarea>
+              </div> -->
 
               <div class="row" style="margin-bottom: 15px;">
                 
@@ -198,7 +197,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div> -->
 
-              <div style="margin-bottom: 15px;">
+<!--               <div style="margin-bottom: 15px;">
                 <label for="exampleFormControlTextarea1" style="margin-bottom: 0px;"><b>Character</b></label>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="noChar">
@@ -213,22 +212,22 @@
                   <label class="form-check-label" for="exampleRadios1">
                     When you annotate <b>the characters</b>, press this button.
                   </label>
-                </div>
+                </div> -->
                 <!-- <button id="addChar" class="button" type="button">
                   <img src="/annotorious_github/assets/plusBtn.png" width="27" />
                 </button> -->
-                <p style="margin-bottom: 10px;">
+<!--                 <p style="margin-bottom: 10px;">
                   (1) Please annotation of all the character's body. 
                   <br>(2) Then, please write down the character's appearance(gender,age,hair style,clothes,belongings,etc.)
-                  ,actions, expressions, gaze, etc.</p>
+                  ,actions, expressions, gaze, etc.</p> -->
                 <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
-                <ol id="addedChar">
+<!--                 <ol id="addedChar">
                 </ol>
               </div>
-              </div>
+              </div> -->
               
               <!-- 효과음 -->
-              <div style="margin-bottom: 15px;">
+<!--               <div style="margin-bottom: 15px;">
                 <label for="exampleFormControlTextarea1" style="margin-bottom: 0px;"><b>Textual sound
                     effects</b></label>
                 <div class="form-check">
@@ -244,21 +243,21 @@
                   <label class="form-check-label" for="exampleRadios2">
                     When you annotate <b>the textual sound effects</b>, press this button.
                   </label>
-                </div>
+                </div> -->
                 <!-- <button id="addTextual" class="button" type="button">
                   <img src="/annotorious_github/assets/plusBtn.png" width="27" />
                 </button> -->
-                <p style="margin-bottom: 10px;">
+<!--                 <p style="margin-bottom: 10px;">
                   (1) Please annotation all the textual sound effects. 
-                  <br>(2) Please describe the textual sound effects.</p>
+                  <br>(2) Please describe the textual sound effects.</p> -->
                 <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
-                <ol id="addedTextual">
+<!--                 <ol id="addedTextual">
                 </ol>
                 </div>
               </div>
-
+ -->
               <!-- 동작선 -->
-              <div style="margin-bottom: 15px;">
+<!--               <div style="margin-bottom: 15px;">
                 <label for="exampleFormControlTextarea1" style="margin-bottom: 0px;"><b>Manpu</b></label>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="noManpu">
@@ -272,20 +271,20 @@
                   <label class="form-check-label" for="exampleRadios2">
                     When you annotate <b>the manpus</b>, press this button.
                   </label>
-                </div>
+                </div> -->
                 <!-- <button id="addManpu" class="button" type="button">
                   <img src="/annotorious_github/assets/plusBtn.png" width="27" />
                 </button> -->
-                <p style="margin-bottom: 10px;">
+<!--                 <p style="margin-bottom: 10px;">
                   (1) Please annotation all the manpus. 
-                  <br>(2) Please describe the manpus.</p>
+                  <br>(2) Please describe the manpus.</p> -->
                 <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
-                <ol id="addedManpu">
+<!--                 <ol id="addedManpu">
                 </ol>
               </div>
               </div>
             </div>
-          </form>
+          </form> -->
 
           <button id="submitBtn" type="button" class="btn btn-primary">Submit</button>
 
@@ -366,34 +365,38 @@
             })
         };
 
+
       //초기화 변수
       var title = 'Dungeon';
       var condition = 1;
+      var starttime = new Date().getTime();
       // var episode = 1; // 1~
 
       if(title=='Dungeon')
         var cutNovel = [1,2,3,4,7,8,9,10,11];
-        var i=2; // 1~8
       
+      var i=2; // 1~8
       var cuti =  cutNovel[i];
       var context = '../assets/Tappytoon/Dungeon/Dungeon/Dungeon_01_' + cuti + '.jpg';
 
 
       //변하는 변수
-      var selectedBtn = 'char';
-      var listTextual = [];
-      var listManpu = [];
+      // var selectedBtn = 'char';
+      // var listTextual = [];
+      // var listManpu = [];
 
       //submit 조건
-      var liCnt = [0,0,0];
-      var liCnt8 = [0,0,0];
-      var liCntMin = [1,1,1];
+      // var liCnt = [0,0,0];
+      // var liCnt8 = [0,0,0];
+      // var liCntMin = [1,1,1];
       
       //이미지
       function getImg() {
 
         var imgSrc = '../assets/Tappytoon/Dungeon/Dungeon/Dungeon_01_' + cuti + '.jpg';
-        imgInput = '<div><img src="' + imgSrc + '" id="hallstatt" width="400px" style="border: 10px solid red;"></div>'
+        // imgInput = '<div><img src="' + imgSrc + '" id="hallstatt" width="400px" style="border: 10px solid red;"></div>'
+        imgInput = '<div><img src="' + imgSrc + '" "></div>'
+        
         $('#myDivMid').append(imgInput);
 
         // for (var i = 0; i < cuti.length; i++) {
@@ -478,252 +481,250 @@
           ]
       }
 
-      anno = Annotorious.init(
-        {
-          image: 'hallstatt', //annotation하는 img id
-          locale: 'auto',
-          drawOnSingleClick: true,
-          widgets : [{ widget: 'COMMENT' }],
-          // widgets: [
-          //   { widget: 'COMMENT' },
-          //   // { widget: 'TAG', vocabulary: [ 'Animal', 'Building', 'Waterbody'] }
-          // ]
-          // widgets: [ 
-          //   { widget: ColorSelectorWidget, force: 'React' },
-          //   'COMMENT',
-          //   'TAG'
-          // ]
-        });
+      // anno = Annotorious.init(
+      //   {
+      //     image: 'hallstatt', //annotation하는 img id
+      //     locale: 'auto',
+      //     drawOnSingleClick: true,
+      //     widgets : [{ widget: 'COMMENT' }],
+      //     // widgets: [
+      //     //   { widget: 'COMMENT' },
+      //     //   // { widget: 'TAG', vocabulary: [ 'Animal', 'Building', 'Waterbody'] }
+      //     // ]
+      //     // widgets: [ 
+      //     //   { widget: ColorSelectorWidget, force: 'React' },
+      //     //   'COMMENT',
+      //     //   'TAG'
+      //     // ]
+      //   });
 
       var now;
       var nowLen;
 
-      anno.on('selectAnnotation', function (a, shape) {
-        console.log('selected');
-        now = a.body[0].value;
-        console.log(a.body[0].value);
-        nowLen = a.body[0].value.length;
-        if(nowLen>0) nowLen = a.body[0].value.match(/\w+/g).length;
-      });
-      anno.on('cancelSelected', function (a) {
-        console.log('cancel');
-      });
-      anno.on('changeSelected', function (selected, previous) {
-        console.log('changed from', previous, 'to', selected);
-      });
-      anno.on('createAnnotation', function (annotation) { //첫 생성sksms
-        console.log('created', annotation);
-        console.log(typeof(annotation));
-        // MiniAnno2 = MiniAnno;
-        // console.log(annotation.target.source);
+      // anno.on('selectAnnotation', function (a, shape) {
+      //   console.log('selected');
+      //   now = a.body[0].value;
+      //   console.log(a.body[0].value);
+      //   nowLen = a.body[0].value.length;
+      //   if(nowLen>0) nowLen = a.body[0].value.match(/\w+/g).length;
+      // });
+      // anno.on('cancelSelected', function (a) {
+      //   console.log('cancel');
+      // });
+      // anno.on('changeSelected', function (selected, previous) {
+      //   console.log('changed from', previous, 'to', selected);
+      // });
+      // anno.on('createAnnotation', function (annotation) { //첫 생성sksms
+      //   console.log('created', annotation);
+      //   console.log(typeof(annotation));
+      //   // MiniAnno2 = MiniAnno;
+      //   // console.log(annotation.target.source);
 
-        //console.log(annotation.body[0].value);
-        // console.log(annotation.target.selector.value);
+      //   //console.log(annotation.body[0].value);
+      //   // console.log(annotation.target.selector.value);
 
-        //Annotation만들기
-        // console.log(MiniAnno.id);
-        // MiniAnno2.id = annotation.id;
-        // console.log(annotation.id, '==? ', MiniAnno.id);
-        // MiniAnno2.body.value = annotation.body[0].value;
-        // MiniAnno2.target.selector.value = annotation.target.selector.value;
+      //   //Annotation만들기
+      //   // console.log(MiniAnno.id);
+      //   // MiniAnno2.id = annotation.id;
+      //   // console.log(annotation.id, '==? ', MiniAnno.id);
+      //   // MiniAnno2.body.value = annotation.body[0].value;
+      //   // MiniAnno2.target.selector.value = annotation.target.selector.value;
 
-        var cnt = annotation.body[0].value.length;
-        //console.log('cnt = ',cnt);
-        if(cnt>0) cnt = annotation.body[0].value.match(/\w+/g).length; 
-        //console.log('cnt = ',cnt);
-        // console.log('typeof(cnt) = ',typeof(cnt));
+      //   var cnt = annotation.body[0].value.length;
+      //   //console.log('cnt = ',cnt);
+      //   if(cnt>0) cnt = annotation.body[0].value.match(/\w+/g).length; 
+      //   //console.log('cnt = ',cnt);
+      //   // console.log('typeof(cnt) = ',typeof(cnt));
         
-        var element = annotation.body[0].value;
-        if(cnt<8)
-        { 
-          alert('Please write at least 8 words');
-          //element = '<p style="text-decoration:line-through double">'+annotation.body[0].value+'</p>';
-        }
+      //   var element = annotation.body[0].value;
+      //   if(cnt<8)
+      //   { 
+      //     alert('Please write at least 8 words');
+      //     //element = '<p style="text-decoration:line-through double">'+annotation.body[0].value+'</p>';
+      //   }
 
-        if(selectedBtn == 'char'){
-          MiniAnno.annotation.push({"type":'char', "id":annotation.id});
-          source = '<li id="liChar">'+element+'</li>';
-          $('#addedChar').append(source);
-          liCnt[0] = liCnt[0] +1;
-          if(cnt<8) liCnt8[0] = liCnt8[0]+1;
-        }
-        else if(selectedBtn == 'textual'){
-          MiniAnno.annotation.push({"type":'textual', "id":annotation.id});
-          source = '<li id="liTextual">'+element+'</li>';
-          $('#addedTextual').append(source);
-          liCnt[1] = liCnt[1] +1;
-          if(cnt<8) liCnt8[1] = liCnt8[1]+1;
-        }
-        else if(selectedBtn == 'manpu'){
-          MiniAnno.annotation.push({"type":'manpu', "id":annotation.id});
-          source = '<li id="liManpu">'+element+'</li>';
-          $('#addedManpu').append(source);
-          liCnt[2] = liCnt[2] +1;
-          if(cnt<8) liCnt8[2] = liCnt8[2]+1;
-        }
-        saveAnno.push(annotation);
-        // console.log(saveAnno);
-        console.log(MiniAnno);
+      //   if(selectedBtn == 'char'){
+      //     MiniAnno.annotation.push({"type":'char', "id":annotation.id});
+      //     source = '<li id="liChar">'+element+'</li>';
+      //     $('#addedChar').append(source);
+      //     liCnt[0] = liCnt[0] +1;
+      //     if(cnt<8) liCnt8[0] = liCnt8[0]+1;
+      //   }
+      //   else if(selectedBtn == 'textual'){
+      //     MiniAnno.annotation.push({"type":'textual', "id":annotation.id});
+      //     source = '<li id="liTextual">'+element+'</li>';
+      //     $('#addedTextual').append(source);
+      //     liCnt[1] = liCnt[1] +1;
+      //     if(cnt<8) liCnt8[1] = liCnt8[1]+1;
+      //   }
+      //   else if(selectedBtn == 'manpu'){
+      //     MiniAnno.annotation.push({"type":'manpu', "id":annotation.id});
+      //     source = '<li id="liManpu">'+element+'</li>';
+      //     $('#addedManpu').append(source);
+      //     liCnt[2] = liCnt[2] +1;
+      //     if(cnt<8) liCnt8[2] = liCnt8[2]+1;
+      //   }
+      //   saveAnno.push(annotation);
+      //   // console.log(saveAnno);
+      //   console.log(MiniAnno);
         
-        // anno.push({});
-        // anno.push({ teks:teks,context:context,x:x,y:y,width:width,height:height,id:id});
-      });
-      anno.on('updateAnnotation', function (annotation, previous) { //수정할 때
-        console.log('updated', previous, 'with', annotation);
-        var element = annotation.body[0].value; 
-        console.log('now = ',now);
-        console.log('element = ',element);
+      //   // anno.push({});
+      //   // anno.push({ teks:teks,context:context,x:x,y:y,width:width,height:height,id:id});
+      // });
+      // anno.on('updateAnnotation', function (annotation, previous) { //수정할 때
+      //   console.log('updated', previous, 'with', annotation);
+      //   var element = annotation.body[0].value; 
+      //   console.log('now = ',now);
+      //   console.log('element = ',element);
 
-        var cnt = annotation.body[0].value.length;
-        if(cnt>0) cnt = annotation.body[0].value.match(/\w+/g).length;         
-        if(cnt<8)
-        { 
-          alert('Please write at least 8 words');
-          // element = '<p style="text-decoration:line-through double">'+annotation.body[0].value+'</p>';
-         // element = annotation.body[0].value;
-        }
-        if(cnt<8 && nowLen>=8){ // 줄어들경우
-          liCnt = liCnt+1;
-        }
-        if(cnt>=8 && nowLen<8) { // 길어질경우
-          liCnt = liCnt-1;
-        }
+      //   var cnt = annotation.body[0].value.length;
+      //   if(cnt>0) cnt = annotation.body[0].value.match(/\w+/g).length;         
+      //   if(cnt<8)
+      //   { 
+      //     alert('Please write at least 8 words');
+      //     // element = '<p style="text-decoration:line-through double">'+annotation.body[0].value+'</p>';
+      //    // element = annotation.body[0].value;
+      //   }
+      //   if(cnt<8 && nowLen>=8){ // 줄어들경우
+      //     liCnt = liCnt+1;
+      //   }
+      //   if(cnt>=8 && nowLen<8) { // 길어질경우
+      //     liCnt = liCnt-1;
+      //   }
 
-        if($('#liChar').text() == now)
-        {
-          console.log('!');
-          $('#liChar').text(element);
-          if(cnt<8 && nowLen>=8){ // 줄어들경우
-            liCnt8[0] = liCnt8[0]+1;
-          }
-          if(cnt>=8 && nowLen<8) { // 길어질경우
-            liCnt8[0] = liCnt8[0]-1;
-          }
-        }
-        else if($('#liTextual').text() == now)
-        {
-          $('#liTextual').text(element);
-          if(cnt<8 && nowLen>=8){ // 줄어들경우
-            liCnt8[1] = liCnt8[1]+1;
-          }
-          if(cnt>=8 && nowLen<8) { // 길어질경우
-            liCnt8[1] = liCnt8[1]-1;
-          }
-        }
-        else if($('#liManpu').text() == now)
-        {
-          $('#liManpu').text(element);
-          if(cnt<8 && nowLen>=8){ // 줄어들경우
-            liCnt8[2] = liCnt8[2]+1;
-          }
-          if(cnt>=8 && nowLen<8) { // 길어질경우
-            liCnt8[2] = liCnt8[2]-1;
-          }
-        }
+      //   if($('#liChar').text() == now)
+      //   {
+      //     console.log('!');
+      //     $('#liChar').text(element);
+      //     if(cnt<8 && nowLen>=8){ // 줄어들경우
+      //       liCnt8[0] = liCnt8[0]+1;
+      //     }
+      //     if(cnt>=8 && nowLen<8) { // 길어질경우
+      //       liCnt8[0] = liCnt8[0]-1;
+      //     }
+      //   }
+      //   else if($('#liTextual').text() == now)
+      //   {
+      //     $('#liTextual').text(element);
+      //     if(cnt<8 && nowLen>=8){ // 줄어들경우
+      //       liCnt8[1] = liCnt8[1]+1;
+      //     }
+      //     if(cnt>=8 && nowLen<8) { // 길어질경우
+      //       liCnt8[1] = liCnt8[1]-1;
+      //     }
+      //   }
+      //   else if($('#liManpu').text() == now)
+      //   {
+      //     $('#liManpu').text(element);
+      //     if(cnt<8 && nowLen>=8){ // 줄어들경우
+      //       liCnt8[2] = liCnt8[2]+1;
+      //     }
+      //     if(cnt>=8 && nowLen<8) { // 길어질경우
+      //       liCnt8[2] = liCnt8[2]-1;
+      //     }
+      //   }
 
-        saveAnno.forEach((item, index)=> {
-		    if(item.id === annotation.id) {
-		      saveAnno.splice(index, 1);
-		    }
-        saveAnno.push(annotation);
-        console.log(saveAnno);
-	    });
+      //   saveAnno.forEach((item, index)=> {
+		  //   if(item.id === annotation.id) {
+		  //     saveAnno.splice(index, 1);
+		  //   }
+      //   saveAnno.push(annotation);
+      //   console.log(saveAnno);
+	    // });
       //출처: https://ordinary-code.tistory.com/172 [김평범's OrdinaryCode:티스토리]
-
-
-      });
-      anno.on('clickAnnotation', function (annotation, shape) { 
-        // console.log('clicked', annotation);
-      });
-      anno.on('deleteAnnotation', function (annotation) { //삭제할 때
-        console.log('deleted', annotation);
+      // });
+      // anno.on('clickAnnotation', function (annotation, shape) { 
+      //   // console.log('clicked', annotation);
+      // });
+      // anno.on('deleteAnnotation', function (annotation) { //삭제할 때
+      //   console.log('deleted', annotation);
         
-        var element = annotation.body[0].value;
+      //   var element = annotation.body[0].value;
         
-        console.log(element,"==?",$('#liChar').text());
-        if($('#liChar').text() == element)
-        {
-          console.log('!!!', element);
-          $('#liChar').remove();
-          liCnt[0] = liCnt[0]-1;
-          if(nowLen<8) liCnt8[0] = liCnt8[0]-1;
-        }
-        else if($('#liTextual').text() == element)
-        {
-          console.log(element);
-          $('#liTextual').remove();
-          liCnt[1] = liCnt[1]-1;
-          if(nowLen<8) liCnt8[1] = liCnt8[1]-1;
-        }
-        else if($('#liManpu').text() == element)
-        {
-          console.log(element);
-          $('#liManpu').remove();
-          liCnt[2] = liCnt[2]-1;
-          if(nowLen<8) liCnt8[2] = liCnt8[2]-1;
-        }
+      //   console.log(element,"==?",$('#liChar').text());
+      //   if($('#liChar').text() == element)
+      //   {
+      //     console.log('!!!', element);
+      //     $('#liChar').remove();
+      //     liCnt[0] = liCnt[0]-1;
+      //     if(nowLen<8) liCnt8[0] = liCnt8[0]-1;
+      //   }
+      //   else if($('#liTextual').text() == element)
+      //   {
+      //     console.log(element);
+      //     $('#liTextual').remove();
+      //     liCnt[1] = liCnt[1]-1;
+      //     if(nowLen<8) liCnt8[1] = liCnt8[1]-1;
+      //   }
+      //   else if($('#liManpu').text() == element)
+      //   {
+      //     console.log(element);
+      //     $('#liManpu').remove();
+      //     liCnt[2] = liCnt[2]-1;
+      //     if(nowLen<8) liCnt8[2] = liCnt8[2]-1;
+      //   }
 
 
-        saveAnno.forEach((item, index)=> {
-		    if(item.id === annotation.id) {
-		      saveAnno.splice(index, 1);
-		    }
-        // console.log(saveAnno);
-	    });
+      //   saveAnno.forEach((item, index)=> {
+		  //   if(item.id === annotation.id) {
+		  //     saveAnno.splice(index, 1);
+		  //   }
+      //   // console.log(saveAnno);
+	    // });
 
-      MiniAnno.annotation.forEach((item, index)=> {
-		    if(item.id === annotation.id) {
-		      MiniAnno.annotation.splice(index, 1);
-		    }
-        // console.log(MiniAnno);
-	    });
+      // MiniAnno.annotation.forEach((item, index)=> {
+		  //   if(item.id === annotation.id) {
+		  //     MiniAnno.annotation.splice(index, 1);
+		  //   }
+      //   // console.log(MiniAnno);
+	    // });
 
-      });
+      // });
 
-      anno.on('mouseEnterAnnotation', function (annotation) {
-        // console.log('enter', annotation);
-      });
-      anno.on('mouseLeaveAnnotation', function (annotation) {
-        // console.log('leave', annotation);
-      });
+      // anno.on('mouseEnterAnnotation', function (annotation) {
+      //   // console.log('enter', annotation);
+      // });
+      // anno.on('mouseLeaveAnnotation', function (annotation) {
+      //   // console.log('leave', annotation);
+      // });
 
       // anno.loadAnnotations('annotations.w3c.json');
       // anno.loadAnnotations('filename.json');
 
       
       //캐릭터 없음
-      $('#noChar').click(function(){
-        if($(this).is(':checked')){
-          console.log('noChar!!');
-          $('#divChar').hide();
-        } else {
-          console.log('yesChar!!');
-          $('#divChar').show();
-        }
-     });
-    //효과음 없음
-    $('#noTextual').click(function(){
-        if($(this).is(':checked')){
-          $('#divTextual').hide();
-        } else {
-          $('#divTextual').show();
-        }
-     });
-    //동작선 없음
-    $('#noManpu').click(function(){
-        if($(this).is(':checked')){
-          $('#divManpu').hide();
-        } else {
-          $('#divManpu').show();
-        }
-     });
+    //   $('#noChar').click(function(){
+    //     if($(this).is(':checked')){
+    //       console.log('noChar!!');
+    //       $('#divChar').hide();
+    //     } else {
+    //       console.log('yesChar!!');
+    //       $('#divChar').show();
+    //     }
+    //  });
+    // //효과음 없음
+    // $('#noTextual').click(function(){
+    //     if($(this).is(':checked')){
+    //       $('#divTextual').hide();
+    //     } else {
+    //       $('#divTextual').show();
+    //     }
+    //  });
+    // //동작선 없음
+    // $('#noManpu').click(function(){
+    //     if($(this).is(':checked')){
+    //       $('#divManpu').hide();
+    //     } else {
+    //       $('#divManpu').show();
+    //     }
+    //  });
 
 
       // 캐릭터 버튼
-      $('#radioChar').click(function () {
-        console.log('addChar!!');
-        selectedBtn = 'char';
-      })
+      // $('#radioChar').click(function () {
+      //   console.log('addChar!!');
+      //   selectedBtn = 'char';
+      // })
       // $('#addChar').click(function () {
       //   console.log('addChar!!');
       //   // anno.setDrawingTool('polygon');
@@ -732,10 +733,10 @@
 
 
       // 효과음 버튼
-      $('#radioTextual').click(function () {
-        console.log('addTextual!!');
-        selectedBtn = 'textual';
-      })
+      // $('#radioTextual').click(function () {
+      //   console.log('addTextual!!');
+      //   selectedBtn = 'textual';
+      // })
       // $('#addTextual').click(function () {
       //   console.log('addTextual!!');
       //   // anno.setDrawingTool('polygon');
@@ -743,10 +744,10 @@
       // })
 
       // 동작선 버튼
-      $('#radioManpu').click(function () {
-        console.log('addManpu!!');
-        selectedBtn = 'manpu';
-      })
+      // $('#radioManpu').click(function () {
+      //   console.log('addManpu!!');
+      //   selectedBtn = 'manpu';
+      // })
       // $('#addManpu').click(function () {
       //   console.log('addManpu!!');
       //   selectedBtn = 'manpu';
@@ -779,30 +780,36 @@
         // 최소 글자 수 
         //des1Cnt = $('#des1').val().length;
         des1Cnt = $('#des1').val().length;
-        des2Cnt = $('#des2').val().length;
+        // des2Cnt = $('#des2').val().length;
 
         if(des1Cnt>0) des1Cnt = $('#des1').val().match(/\w+/g).length;
-        if(des2Cnt>0) des2Cnt = $('#des2').val().match(/\w+/g).length;
+        // if(des2Cnt>0) des2Cnt = $('#des2').val().match(/\w+/g).length;
         // console.log(des1Cnt);
 
         var alertStr = "";
-        if(des1Cnt < 8 || des2Cnt < 8 || liCnt8[0]>0 || liCnt8[1]>0 || liCnt8[2]>0)
-        {
-          alertStr = alertStr + "Please write at least 8 words in ";
-          if(des1Cnt<8) alertStr = alertStr + "'the scene' "
-          if(des2Cnt<8) alertStr = alertStr + "'the background' "
-          if(liCnt8[0]>0) alertStr = alertStr + "'Character' "
-          if(liCnt8[1]>0) alertStr = alertStr + "'Textual sound effects' "
-          if(liCnt8[2]>0) alertStr = alertStr + "'Manpu' "
+
+        
+        if(des1Cnt<8){
+          alertStr = alertStr + "Please write at least 8 words";
           alertStr = alertStr + "\n";
         }
-        if(liCnt[0]<liCntMin[0] || liCnt[1]<liCntMin[1] || liCnt[2]<liCntMin[2]){
-          alertStr = alertStr + "Please annotation at least 1 in ";
-          if(liCnt[0]<liCntMin[0]) alertStr = alertStr + "'Character' "
-          if(liCnt[1]<liCntMin[1]) alertStr = alertStr + "'Textual sound effects' "
-          if(liCnt[2]<liCntMin[2]) alertStr = alertStr + "'Manpu' "
-          alertStr = alertStr + "\n";          
-        }
+        // if(des1Cnt < 8 || des2Cnt < 8 || liCnt8[0]>0 || liCnt8[1]>0 || liCnt8[2]>0)
+        // {
+        //   alertStr = alertStr + "Please write at least 8 words in ";
+        //   if(des1Cnt<8) alertStr = alertStr + "'the scene' "
+        //   if(des2Cnt<8) alertStr = alertStr + "'the background' "
+        //   if(liCnt8[0]>0) alertStr = alertStr + "'Character' "
+        //   if(liCnt8[1]>0) alertStr = alertStr + "'Textual sound effects' "
+        //   if(liCnt8[2]>0) alertStr = alertStr + "'Manpu' "
+        //   alertStr = alertStr + "\n";
+        // }
+        // if(liCnt[0]<liCntMin[0] || liCnt[1]<liCntMin[1] || liCnt[2]<liCntMin[2]){
+        //   alertStr = alertStr + "Please annotation at least 1 in ";
+        //   if(liCnt[0]<liCntMin[0]) alertStr = alertStr + "'Character' "
+        //   if(liCnt[1]<liCntMin[1]) alertStr = alertStr + "'Textual sound effects' "
+        //   if(liCnt[2]<liCntMin[2]) alertStr = alertStr + "'Manpu' "
+        //   alertStr = alertStr + "\n";          
+        // }
 
         if(alertStr!=""){
           alert(alertStr);
@@ -811,7 +818,9 @@
         {
           alert('Submit!');
           MiniAnno.scene = $('#des1').val();
-          MiniAnno.back = $('#des2').val();
+          // MiniAnno.back = $('#des2').val();
+          var endTime = new Date().getTime();
+          MiniAnno.time = endTime-starttime;
           sendData(MiniAnno, 0);
           sendData(saveAnno, 1);
           // saveText( JSON.stringify(saveAnno), "filename1.json" );

@@ -98,7 +98,7 @@
   <!-- Responsive navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container px-lg-5">
-      <a class="navbar-brand" href="#!">Novel(y) and Context(y)</a>
+      <a class="navbar-brand" href="#!">Novel(n) and Context(y)</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
           class="navbar-toggler-icon"></span></button>
@@ -120,13 +120,13 @@
 
 
         <div id="myDivLeft" class="col-md-4 left">
-          <div class="card border-primary mb-3">
+          <!-- <div class="card border-primary mb-3">
             <div class="card-body text-primary">
               <h5 class="card-title" style="color:black">Matched Novel</h5>
               <p id="comicnovel" class="card-text" style="color:black">
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div id="myDivMid" class="col-md-4 mid" style="text-align:left;"> 
@@ -369,11 +369,12 @@
       //초기화 변수
       var title = 'Dungeon';
       var condition = 1;
+      var startTime = new Date().getTime();
       // var episode = 1; // 1~
 
       if(title=='Dungeon')
         var cutNovel = [1,2,3,4,7,8,9,10,11];
-        var i=1; // 1~8
+        var i=3; // 1~8
       
       var cuti =  cutNovel[i];
       var context = '../assets/Tappytoon/Dungeon/Dungeon/Dungeon_01_' + cuti + '.jpg';
@@ -416,24 +417,24 @@
 
 
       //소설
-      function readJSON(file, callback) {
-        var rawFile = new XMLHttpRequest();
-        rawFile.overrideMimeType("application/json");
-        rawFile.open("GET", file, true);
-        rawFile.onreadystatechange = function () {
-          if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-          }
-        }
-        rawFile.send(null);
-      }
-      readJSON("../assets/Tappytoon/Dungeon/Dungeon_novel_mapping.json", function (text) {
-        var Data = JSON.parse(text);
-        //console.log(Data);
-        //console.log(Data[0].Mapping);
-        $('#comicnovel').append(Data[i].Mapping);
-        $('#comicnovel').append("<br>");
-      });
+      // function readJSON(file, callback) {
+      //   var rawFile = new XMLHttpRequest();
+      //   rawFile.overrideMimeType("application/json");
+      //   rawFile.open("GET", file, true);
+      //   rawFile.onreadystatechange = function () {
+      //     if (rawFile.readyState === 4 && rawFile.status == "200") {
+      //       callback(rawFile.responseText);
+      //     }
+      //   }
+      //   rawFile.send(null);
+      // }
+      // readJSON("../assets/Tappytoon/Dungeon/Dungeon_novel_mapping.json", function (text) {
+      //   var Data = JSON.parse(text);
+      //   //console.log(Data);
+      //   //console.log(Data[0].Mapping);
+      //   $('#comicnovel').append(Data[i].Mapping);
+      //   $('#comicnovel').append("<br>");
+      // });
       
       // 글 작성 실시간으로 글 세기
       // $('#des1').keyup(function (e) {
@@ -818,6 +819,8 @@
           alert('Submit!');
           MiniAnno.scene = $('#des1').val();
           MiniAnno.back = $('#des2').val();
+          var endTime = new Date().getTime();
+          MiniAnno.time = endTime-starttime;
           sendData(MiniAnno, 0);
           sendData(saveAnno, 1);
           // saveText( JSON.stringify(saveAnno), "filename1.json" );

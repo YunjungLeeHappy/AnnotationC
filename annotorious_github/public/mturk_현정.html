@@ -1,0 +1,148 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<style>
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Annotation</title>
+    <style>
+        .wrapper{
+            display: flex;
+        }
+        .left{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .slider{
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .question{
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task successfully submit answers -->
+<body>
+        <div style="margin: 10px 0 10px 0px;">
+            <h3>Please listen to a short recording of a speaker, then mark each voice feature.</h3>
+            <h4>(The center value is marked as a default.)</h4>
+        </div>
+
+        <crowd-form answer-format="flatten-objects" style="margin-left: 50px;">
+            <audio controls="" style="width: 400px; margin-bottom: 10px; margin-left: 50px;">
+                <!-- Your audio file URLs will be substituted for the "audio_url" variable
+                      when you publish a batch with a CSV input file containing multiple
+                      audio file URLs -->
+                <source src="${audio_url}" type="audio/mpeg" />
+            </audio>
+
+
+            <div class="wrapper" style="margin-bottom: 0px;">
+
+                <div class="left" style="margin-bottom: 0px;">
+                    <div class="slider" >
+                        <div class = "question" >
+                            <span>Low</span>
+                            <crowd-slider name="pitch" min="1" max="5" step="1" value="3" pin="false" required></crowd-slider>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="slider" >
+                        <div class = "question" >
+                            <span>Soft</span>
+                            <crowd-slider name="volume" min="1" max="5" step="1" value="3" pin="true" required></crowd-slider>
+                            <span>Loud</span>
+                        </div>
+                    </div>
+
+                    <div class="slider" >
+                        <div class = "question" >
+                            <span>Clear</span>
+                            <crowd-slider name="precise" min="1" max="5" step="1" value="3" pin="true" required></crowd-slider>
+                            <span>Hoarse</span>
+                        </div>
+                    </div>
+
+                    <div class="slider" >
+                        <div class="question" >
+                            <span>Slow</span>
+                            <crowd-slider name="speed" min="1" max="5" step="1" value="3" pin="true" required></crowd-slider>
+                            <span>Rapid</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right" style="margin-bottom: 0px;">
+                  <div class="slider" >
+                      <div class="question" >
+                          <span>Monotonous</span>
+                          <crowd-slider name="variation" min="1" max="5" step="1" value="3" pin="true" required></crowd-slider>
+                          <span>Animated</span>
+                      </div>
+                  </div>
+
+                  <div class="slider" >
+                      <div class = "question" >
+                          <span>Rough</span>
+                          <crowd-slider name="hoarseness" min="1" max="5" step="1" value="3" pin=false required></crowd-slider>
+                          <span>Smooth</span>
+                      </div>
+                  </div>
+
+                    <div class="slider" >
+                        <div class = "question" >
+                            <span>Full</span>
+                            <crowd-slider name="breathiness" min="1" max="5" step="1" value="3" pin="true" required></crowd-slider>
+                            <span>Breathy</span>
+                        </div>
+                    </div>
+
+                    <div class="slider" >
+                        <div class = "question" >
+                            <span>Unpleasant</span>
+                            <crowd-slider name="preference" min="1" max="5" step="1" value="3" pin=false required></crowd-slider>
+                            <span>Pleasant</span>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="slider" >
+                        <h4>Shrillness</h4>
+                        <div class = "question" >
+                            <span>Resonant</span>
+                            <crowd-slider name="shrillness" min="1" max="5" step="1" pin="true" required></crowd-slider>
+                            <span>Shrill</span>
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+            <!-- Definitions from Oxford Languages -->
+            <short-instructions>
+            <h3>Definitions of Voice Features</h3>
+            <p><b>Pitch</b> : The degree of highness or lowness of a tone.</p>
+            <p><b>Loudness</b> : The degree of loudness in volumn.</p>
+            <p><b>Hoarseness</b> : The degree of roughness and harshness of a voice, typically as the result of a sore throat or of shouting</p>
+            <p><b>Speed</b> : The speech rate.</p>
+            <p><b>Variation</b> : The rise and fall of the voice in speaking; Monotonous means lacking in variation in tone or pitch.</p>
+            <p><b>Smoothness</b> : The level of smoothness of the sound.</p>
+            <p><b>Breathiness</b> : The rate of the usage of air-flow; breathy sound means high air-flow.</p>
+            <p><b>Preference</b> : The level of preference. Strong preference means you like the voice very much.</p>
+            </short-instructions>
+
+        </crowd-form>
+</body>

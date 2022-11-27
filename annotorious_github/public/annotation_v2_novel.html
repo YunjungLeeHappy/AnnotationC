@@ -145,9 +145,11 @@
           <div class="card border-primary mb-3">
             <div class="card-body text-primary">
               <p class="card-text" style="color:black">
-                Please copy and paste the sentences from the novel on the left panel that match the comic image;
-              <!-- </li>  -->
                 <ol>
+                
+                <li style="color:black">Please copy and paste the sentences from the novel on the left panel that match the comic image;</li> 
+              <!-- </li>  -->
+                <!-- <ol> -->
                 <li style="color:black">Please find related texts from the novel on the left panel that best describe the comic image;</li> 
                 <li style="color:black">Please copy the texts and paste them below, then click <b>'Submit'</b> button;</li> 
                 </ol>
@@ -266,7 +268,7 @@
       
       //이미지
       function getImg() {
-        imgInput = '<div><img src="' + imgSrc + '" "></div>'
+        imgInput = '<div><img width="400px" src="' + imgSrc + '" "></div>'
         $('#myDivMid').append(imgInput);
       }
       getImg();

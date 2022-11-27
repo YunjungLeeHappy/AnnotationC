@@ -286,7 +286,7 @@
         }
         rawFile.send(null);
       }
-      readJSON("../assets/Tappytoon/MTurk/Novel.json", function (text) {
+      readJSON("../assets/Tappytoon/MTurk/Novel_Mturk.json", function (text) {
         var Data = JSON.parse(text);
         $('#comicnovel').append(Data[Datai].novel_txt);
         $('#comicnovel').append("<br>");

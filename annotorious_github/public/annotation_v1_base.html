@@ -222,8 +222,8 @@
       }
       // Create session name
       var condition = 1;
-      var newSessionName = 'v'+condition+'_'+ adj_animal[Math.floor(Math.random() * adj_animal.length)] + Date.now();
-      const databaseURL = "https://accesscomics3mturk-default-rtdb.asia-southeast1.firebasedatabase.app/version2/"+newSessionName;
+      var newSessionName = 'vv'+condition+'_'+ adj_animal[Math.floor(Math.random() * adj_animal.length)] + Date.now();
+      const databaseURL = "https://accesscomics3mturk-default-rtdb.asia-southeast1.firebasedatabase.app/"+newSessionName;
       const db = ['/annotations1', '/annotations2'];
 
       sendData = (dataDict, index) => {

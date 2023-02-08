@@ -260,15 +260,16 @@
       const cuti = param.get('n');
       console.log(cuti);
       
-      if(cuti==1) imgAnno = 'Dungeon_2';
-      else if(cuti==2) imgAnno = 'Dungeon_3';
-      else if(cuti==3) imgAnno = 'Dungeon_4';
-      else if(cuti==4) imgAnno = 'Hourglass_2';
-      else if(cuti==5) imgAnno = 'Hourglass_3';
-      else if(cuti==6) imgAnno = 'Hourglass_4';
-      else if(cuti==7) imgAnno = 'MyLife_2';
-      else if(cuti==8) imgAnno = 'MyLife_3';
-      else if(cuti==9) imgAnno = 'MyLife_4';
+      if(cuti==1){ imgAnno = 'Dungeon_2'; Datai=0;}
+      else if(cuti==2){ imgAnno = 'Dungeon_3'; Datai=0;} 
+      else if(cuti==3){ imgAnno = 'Dungeon_4'; Datai=0;}
+      else if(cuti==4){ imgAnno = 'Hourglass_2'; Datai=1;}
+      else if(cuti==5){ imgAnno = 'Hourglass_3'; Datai=1;}
+      else if(cuti==6){ imgAnno = 'Hourglass_4'; Datai=1;}
+      else if(cuti==7){ imgAnno = 'MyLife_2'; Datai=2;}
+      else if(cuti==8){ imgAnno = 'MyLife_3'; Datai=2;}
+      else if(cuti==9){ imgAnno = 'MyLife_4'; Datai=2;}
+
       console.log(imgAnno);
       
       var title = imgAnno.split('_')[0];

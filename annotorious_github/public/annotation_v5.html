@@ -228,7 +228,7 @@
       }
       // Create session name
       var condition = 5;
-      var newSessionName = 'vvv'+condition+'_'+ adj_animal[Math.floor(Math.random() * adj_animal.length)] + Date.now();
+      var newSessionName = 'v55'+condition+'_'+ adj_animal[Math.floor(Math.random() * adj_animal.length)] + Date.now();
     
       //const databaseURL = "https://accesscomics3mturk-default-rtdb.asia-southeast1.firebasedatabase.app/"+newSessionName;
       const databaseURL = "https://accesscomics3mturkv5-default-rtdb.asia-southeast1.firebasedatabase.app/"+newSessionName;
@@ -269,13 +269,27 @@
       else if(cuti==9){ imgAnno = 'MyLife_4'; Datai=2;}
 
       console.log(imgAnno);
+      var imgSrc_0 = '../assets/Tappytoon/Mturk/'+title+'_'+(cutii-1)+'.jpg';
       var imgSrc = '../assets/Tappytoon/Mturk/'+imgAnno+'.jpg';
-
+      var imgSrc_2 = '../assets/Tappytoon/Mturk/'+title+'_'+(cutii+1)+'.jpg';
       
       //이미지
       function getImg() {
-        imgInput = '<div><img width="400px" src="' + imgSrc + '" "></div>'
+        imgInput = '<div><img width="400px" src="' + imgSrc_0 + '" "></div>'
+        imgInput = imgInput + '<div><img width="400px" src="' + imgSrc + '" style="border: 10px solid red;""></div>'
+        imgInput = imgInput + '<div><img width="400px" src="' + imgSrc_2 + '" "></div>'
+        
         $('#myDivMid').append(imgInput);
+
+        // for (var i = 0; i < cuti.length; i++) {
+        //   var imgSrc = '../assets/Tappytoon/Dungeon/Dungeon_img_test/Dungeon_01_' + cuti[i] + '.jpg';
+        //   var imgInput = '<div><img src="' + imgSrc + '" width="400px"></div>'
+        //   if (cuti[i] == cut) {
+        //     imgInput = '<div><img src="' + imgSrc + '" id="hallstatt" width="400px" style="border: 10px solid red;"></div>'
+        //   }
+        //   // console.log(imgInput);
+        //   $('#myDivMid').append(imgInput);
+        
       }
       getImg();
 
